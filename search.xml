@@ -4,13 +4,29 @@
   
     
     <entry>
-      <title>test_my_site</title>
+      <title>Test my site</title>
       <link href="/2020/06/12/test-my-site/"/>
       <url>/2020/06/12/test-my-site/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> Test </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> First Psot </tag>
+            
+            <tag> Test </tag>
+            
+            <tag> My blog </tag>
+            
+        </tags>
       
     </entry>
     

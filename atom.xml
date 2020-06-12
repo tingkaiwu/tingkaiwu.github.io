@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>TINGKAI BLOG</title>
+  <title>TINGKAI&#39;S BLOG</title>
   
   <subtitle>REAL DREAMERS DON&#39;T SLEEP</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tingkaiwu.com/"/>
-  <updated>2020-06-12T04:33:37.819Z</updated>
+  <updated>2020-06-12T20:19:30.443Z</updated>
   <id>http://tingkaiwu.com/</id>
   
   <author>
@@ -17,17 +17,25 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test_my_site</title>
+    <title>Test my site</title>
     <link href="http://tingkaiwu.com/2020/06/12/test-my-site/"/>
     <id>http://tingkaiwu.com/2020/06/12/test-my-site/</id>
     <published>2020-06-12T04:33:37.000Z</published>
-    <updated>2020-06-12T04:33:37.819Z</updated>
+    <updated>2020-06-12T20:19:30.443Z</updated>
     
     <summary type="html">
     
     </summary>
     
     
+      <category term="Test" scheme="http://tingkaiwu.com/categories/Test/"/>
+    
+    
+      <category term="First Psot" scheme="http://tingkaiwu.com/tags/First-Psot/"/>
+    
+      <category term="Test" scheme="http://tingkaiwu.com/tags/Test/"/>
+    
+      <category term="My blog" scheme="http://tingkaiwu.com/tags/My-blog/"/>
     
   </entry>
   
