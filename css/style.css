@@ -491,3 +491,14 @@ code {
 .fancybox-close:active {
     background: url("../fancybox/fancybox_sprite.png");
 }
+.navbar-title {
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+.navbar-menu {
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+html{
+    overflow-x: hidden;
+}
