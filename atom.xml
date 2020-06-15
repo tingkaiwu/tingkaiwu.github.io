@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tingkaiwu.com/"/>
-  <updated>2020-06-14T04:12:14.373Z</updated>
+  <updated>2020-06-15T17:32:41.416Z</updated>
   <id>http://tingkaiwu.com/</id>
   
   <author>
@@ -21,16 +21,13 @@
     <link href="http://tingkaiwu.com/2020/06/12/test-my-site/"/>
     <id>http://tingkaiwu.com/2020/06/12/test-my-site/</id>
     <published>2020-06-12T04:33:37.000Z</published>
-    <updated>2020-06-14T04:12:14.373Z</updated>
+    <updated>2020-06-15T17:32:41.416Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="First"><a href="#First" class="headerlink" title="First"></a>First</h1><p>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. </p><a id="more"></a><h1 id="Second"><a href="#Second" class="headerlink" title="Second"></a>Second</h1><p>If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. </p><h1 id="Third"><a href="#Third" class="headerlink" title="Third"></a>Third</h1><p>If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find t
-      
+      Test my site.
     
     </summary>
     
@@ -43,6 +40,10 @@
       <category term="Test" scheme="http://tingkaiwu.com/tags/Test/"/>
     
       <category term="My blog" scheme="http://tingkaiwu.com/tags/My-blog/"/>
+    
+      <category term="YaYaYa" scheme="http://tingkaiwu.com/tags/YaYaYa/"/>
+    
+      <category term="Many Tags" scheme="http://tingkaiwu.com/tags/Many-Tags/"/>
     
   </entry>
   

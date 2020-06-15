@@ -8,7 +8,7 @@
       <link href="/2020/06/12/test-my-site/"/>
       <url>/2020/06/12/test-my-site/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="First"><a href="#First" class="headerlink" title="First"></a>First</h1><p>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. </p><a id="more"></a><h1 id="Second"><a href="#Second" class="headerlink" title="Second"></a>Second</h1><p>If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. </p><h1 id="Third"><a href="#Third" class="headerlink" title="Third"></a>Third</h1><p>If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.</p>]]></content>
       
       
       <categories>
@@ -25,6 +25,10 @@
             <tag> Test </tag>
             
             <tag> My blog </tag>
+            
+            <tag> YaYaYa </tag>
+            
+            <tag> Many Tags </tag>
             
         </tags>
       
