@@ -491,9 +491,16 @@ code {
 .fancybox-close:active {
     background: url("../fancybox/fancybox_sprite.png");
 }
+.index-post-hr {
+    margin: 0em;
+    padding: 0em;
+}
 .navbar-title {
     font-size: 1.3em;
     line-height: 1.5em;
+}
+.index-post-title {
+    margin: 0em;
 }
 .navbar-menu:focus {
     background: black!important;
