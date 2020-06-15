@@ -1,0 +1,11 @@
+<div class="col-md-3" id="date_meta"> 
+
+	<!-- date -->
+	<% if (item.date) { %>
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	<%= item.date.format(config.date_format) %> 
+	</div>
+	<% } %>
+
+</div><!-- col-md-3 -->

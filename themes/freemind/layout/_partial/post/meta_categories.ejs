@@ -1,0 +1,13 @@
+<div class="col-md-3" id="categories_meta"> 
+
+	<!-- categories -->
+    <% if (item.categories  && item.categories.length ) { %>
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+        <%- partial('category') %>
+    </ul>
+	</div>
+	<% } %>
+	
+</div><!-- col-md-3 -->
