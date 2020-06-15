@@ -500,7 +500,8 @@ code {
     line-height: 1.5em;
 }
 .index-post-title {
-    margin: 0em;
+    margin: 0em!important;
+    padding: 0em!important;
 }
 .navbar-menu:focus {
     background: black!important;
