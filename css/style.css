@@ -495,10 +495,14 @@ code {
     font-size: 1.3em;
     line-height: 1.5em;
 }
+.navbar-menu:focus {
+    background: black!important;
+}
 .navbar-menu {
     font-size: 1.3em;
     line-height: 1.3em;
+    outline: none;
 }
-html{
+html {
     overflow-x: hidden;
 }
