@@ -6,7 +6,7 @@
 title: "TINGKAI'S BLOG"
 subtitle: "REAL DREAMERS DON'T SLEEP"
 description: "TINGKAI"
-keywords:
+keywords: react, redux, flux, middleware, thunk, saga, hoc
 author: TingKai
 language: en
 timezone: America/New_York
