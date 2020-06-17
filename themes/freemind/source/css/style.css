@@ -396,19 +396,22 @@ h2 {
     height: 20px;
 }
 table {
-    border-collapse: separate;
+    border-collapse: collapse;
     border-spacing: 0;
     vertical-align: middle;
+    table-layout: auto;
 }
 th {
     padding: 12px 10px 12px 10px;
     border-bottom: 1px dashed #4088b8;
+    border-style: dashed;
 }
 td {
     padding: 7px 10px 7px 10px;
     text-align: left;
     font-weight: normal;
     vertical-align: middle;
+    border-style: dashed;
 }
 .cf:before,
 .cf:after {
