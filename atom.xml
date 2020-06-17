@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tingkaiwu.com/"/>
-  <updated>2020-06-15T17:32:41.416Z</updated>
+  <updated>2020-06-17T09:33:05.003Z</updated>
   <id>http://tingkaiwu.com/</id>
   
   <author>
@@ -17,55 +17,46 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Test my site</title>
-    <link href="http://tingkaiwu.com/2020/06/12/test-my-site/"/>
-    <id>http://tingkaiwu.com/2020/06/12/test-my-site/</id>
-    <published>2020-06-12T04:33:37.000Z</published>
-    <updated>2020-06-15T17:32:41.416Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="First"><a href="#First" class="headerlink" title="First"></a>First</h1><p>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. </p><a id="more"></a><h1 id="Second"><a href="#Second" class="headerlink" title="Second"></a>Second</h1><p>If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. </p><h1 id="Third"><a href="#Third" class="headerlink" title="Third"></a>Third</h1><p>If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.</p>]]></content>
+    <title>High level overview of Redux</title>
+    <link href="http://tingkaiwu.com/2019/01/17/high-level-overview-of-redux/"/>
+    <id>http://tingkaiwu.com/2019/01/17/high-level-overview-of-redux/</id>
+    <published>2019-01-17T10:22:34.000Z</published>
+    <updated>2020-06-17T09:33:05.003Z</updated>
     
     <summary type="html">
     
-      Test my site.
+      “Redux is a predictable state container for JavaScript apps.”
     
     </summary>
     
     
-      <category term="Test" scheme="http://tingkaiwu.com/categories/Test/"/>
+      <category term="React Ecosystem" scheme="http://tingkaiwu.com/categories/React-Ecosystem/"/>
     
     
-      <category term="First Psot" scheme="http://tingkaiwu.com/tags/First-Psot/"/>
-    
-      <category term="Test" scheme="http://tingkaiwu.com/tags/Test/"/>
-    
-      <category term="My blog" scheme="http://tingkaiwu.com/tags/My-blog/"/>
-    
-      <category term="YaYaYa" scheme="http://tingkaiwu.com/tags/YaYaYa/"/>
-    
-      <category term="Many Tags" scheme="http://tingkaiwu.com/tags/Many-Tags/"/>
+      <category term="Redux" scheme="http://tingkaiwu.com/tags/Redux/"/>
     
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://tingkaiwu.com/2020/06/12/hello-world/"/>
-    <id>http://tingkaiwu.com/2020/06/12/hello-world/</id>
-    <published>2020-06-12T04:28:39.738Z</published>
-    <updated>2020-06-12T04:28:39.738Z</updated>
+    <title>Let&#39;s talk about Flux</title>
+    <link href="http://tingkaiwu.com/2019/01/12/lets-talk-about-flux/"/>
+    <id>http://tingkaiwu.com/2019/01/12/lets-talk-about-flux/</id>
+    <published>2019-01-12T05:33:37.000Z</published>
+    <updated>2020-06-17T09:32:54.540Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>In the highly interactive front-end applications, the data state of the application and the user’s operation events are the most vexing. Therefore, when we are dealing with complex interactions such as “event changes state, state refresh UI”. A pattern is needed to regulate the data flow of the application. Flux is used to solve these problems.</p><a id="more"></a><br><h1 id="Flux-origin"><a href="#Flux-origin" class="headerlink" title="Flux origin"></a>Flux origin</h1><p>Flux is a design concept proposed by Facebook. Its most important thinking is one-way data flow.</p><p><img src="https://drive.google.com/uc?export=view&id=10I3eiAoPrFEtccK7mW52vP9eK22Aqpw5" alt="Flux vs MVC"></p><p>Although not all MVC implementations are as shown above. It is easy to cause maintenance problems because of the two-way data flow. However, Flux clearly defines the roles’ responsibilities and each role’s interactions, which improves maintainability. Flux is a one-way data flow design concept, not a library, so it has a variety of implementations.<br><br></p><h1 id="Flux-composition"><a href="#Flux-composition" class="headerlink" title="Flux composition"></a>Flux composition</h1><p><img src="https://drive.google.com/uc?export=view&id=1wqpOMUrlUZqzEXpS1hfoVouA9XPEEddl" alt="Flux flow"><br><strong>The main roles in Flux:</strong></p><ul><li>Action: Standardize all actions to change data, so you can quickly master the behavior of the entire App.</li><li>Action Creator: Responsible for creating action and passing action to dispatcher.</li><li>Dispatcher: Inform all registered stores of the current behavior.</li><li>Store: Store data and business logic, and only provide getter API for other modules to obtain data.</li><li>Controller View: Responsible for registering the listener with the store, and obtaining the latest data to pass to the view.</li><li>View: Render the UI according to the data and listen to the user’s operation events.<br><br><br></li></ul><h1 id="Flux-process-flow"><a href="#Flux-process-flow" class="headerlink" title="Flux process flow"></a>Flux process flow</h1><p><img src="https://drive.google.com/uc?export=view&id=16ALtl2eboAq5JfV37lL45DIaj_NfcUoh" alt="Flux flow detail"></p><ol><li>User operation app.</li><li>Action creator creates the action and passes it to dispatcher.</li><li>The dispatcher sequentially passes the action to the store.</li><li>The store determines whether the data needs to be updated according to the action type.</li><li>If the data is updated, then trigger the controller view listener.</li><li>Controller view gets the latest data from the store.</li><li>View re-renders the UI based on the data.<br><br><br></li></ol><h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h1><p>Flux is a one-way data flow design pattern that helps you write a structured front-end architecture.</p><p>The benefits Flux brings to you are:</p><ol><li>You can quickly master the behavior in the entire app.</li><li>Information and business logic are also stored uniformly.</li><li>Let View only need to be responsible for the layout of the UI.<br><br><br><br><br></li></ol><hr><p><strong>Reference link:</strong><br><a href="https://medium.com/4cats-io/%E6%B7%B1%E5%85%A5%E6%B7%BA%E5%87%BA-flux-44a48c320e11" target="_blank" rel="noopener">https://medium.com/4cats-io/flux-44a48c320e11</a><br><a href="https://medium.com/@w3bh4ck/the-flux-architecture-pattern-for-frontend-development-1f2dae32b789" target="_blank" rel="noopener">https://medium.com/@w3bh4ck/the-flux-architecture-pattern</a></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
+      Flux is a one-way data flow design pattern that helps you write a structured front-end architecture.
     
     </summary>
     
     
+      <category term="React Ecosystem" scheme="http://tingkaiwu.com/categories/React-Ecosystem/"/>
+    
+    
+      <category term="Flux" scheme="http://tingkaiwu.com/tags/Flux/"/>
     
   </entry>
   
