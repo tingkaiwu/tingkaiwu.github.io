@@ -44,7 +44,7 @@ Redux is inspired by Flux and Elm architecture. So, be sure to understand what F
 - Reducer implementation changes
 <br><br>
 
-# Looking at Redux from the program
+# Redux from the code
 The concept of Store in Redux is very simple, the following code:
 ```sh
 let listeners = []
