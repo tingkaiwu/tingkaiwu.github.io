@@ -7,17 +7,17 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>Let&#39;s talk about Flux | TINGKAI&#39;S BLOG</title>
+  <title>Dive into Middleware - Introduction | TINGKAI&#39;S BLOG</title>
   
   <meta name="author" content="TingKai">
   
-  <meta name="description" content="Flux is a one-way data flow design pattern that helps you write a structured front-end architecture.">
+  <meta name="description" content="Middleware can process everything from the predefined start point to the end point.">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
   
-  <meta property="og:title" content="Let&#39;s talk about Flux" />
+  <meta property="og:title" content="Dive into Middleware - Introduction" />
   <meta property="og:site_name" content="TINGKAI&#39;S BLOG" />
 
   
@@ -104,7 +104,7 @@
 
 <div class="page-header">
 	<h1>
-		Let&#39;s talk about Flux</h1>
+		Dive into Middleware - Introduction</h1>
 </div>
 
 
@@ -120,45 +120,23 @@
 	<div class="mypage">		
 	  
 		 <div class="alert alert-success description">
-			<i class="fa fa-info-circle"></i> Flux is a one-way data flow design pattern that helps you write a structured front-end architecture.
+			<i class="fa fa-info-circle"></i> Middleware can process everything from the predefined start point to the end point.
 		 </div> <!-- alert -->
 	  		
 
-	  <p>In the highly interactive front-end applications, the data state of the application and the user’s operation events are the most vexing. Therefore, when we are dealing with complex interactions such as “event changes state, state refresh UI”. A pattern is needed to regulate the data flow of the application. Flux is used to solve these problems.</p>
+	  <p>Middleware is also called intermediary layer or middle layer. Middleware applications can be seen in many back-end server frameworks. Simply put, Middleware can process everything from the predefined start point to the end point.</p>
 <a id="more"></a>
 <br>
 
-<h1 id="Flux-origin"><a href="#Flux-origin" class="headerlink" title="Flux origin"></a>Flux origin</h1><p>Flux is a design concept proposed by Facebook. Its most important thinking is one-way data flow.</p>
-<p><img src="https://drive.google.com/uc?export=view&id=10I3eiAoPrFEtccK7mW52vP9eK22Aqpw5" alt="Flux vs MVC"></p>
-<p>Although not all MVC implementations are as shown above. It is easy to cause maintenance problems because of the two-way data flow. However, Flux clearly defines the roles’ responsibilities and each role’s interactions, which improves maintainability. Flux is a one-way data flow design concept, not a library, so it has a variety of implementations.<br><br></p>
-<h1 id="Flux-composition"><a href="#Flux-composition" class="headerlink" title="Flux composition"></a>Flux composition</h1><p><img src="https://drive.google.com/uc?export=view&id=1wqpOMUrlUZqzEXpS1hfoVouA9XPEEddl" alt="Flux flow"><br><strong>The main roles in Flux:</strong></p>
-<ul>
-<li>Action: Standardize all actions to change data, so you can quickly master the behavior of the entire App.</li>
-<li>Action Creator: Responsible for creating action and passing action to dispatcher.</li>
-<li>Dispatcher: Inform all registered stores of the current behavior.</li>
-<li>Store: Store data and business logic, and only provide getter API for other modules to obtain data.</li>
-<li>Controller View: Responsible for registering the listener with the store, and obtaining the latest data to pass to the view.</li>
-<li>View: Render the UI according to the data and listen to the user’s operation events.<br><br><br></li>
-</ul>
-<h1 id="Flux-process-flow"><a href="#Flux-process-flow" class="headerlink" title="Flux process flow"></a>Flux process flow</h1><p><img src="https://drive.google.com/uc?export=view&id=16ALtl2eboAq5JfV37lL45DIaj_NfcUoh" alt="Flux flow detail"></p>
-<ol>
-<li>User operation app.</li>
-<li>Action creator creates the action and passes it to dispatcher.</li>
-<li>The dispatcher sequentially passes the action to the store.</li>
-<li>The store determines whether the data needs to be updated according to the action type.</li>
-<li>If the data is updated, then trigger the controller view listener.</li>
-<li>Controller view gets the latest data from the store.</li>
-<li>View re-renders the UI based on the data.<br><br><br></li>
-</ol>
-<h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h1><p>Flux is a one-way data flow design pattern that helps you write a structured front-end architecture.</p>
-<p>The benefits Flux brings to you are:</p>
-<ol>
-<li>You can quickly master the behavior in the entire app.</li>
-<li>Information and business logic are also stored uniformly.</li>
-<li>Let View only need to be responsible for the layout of the UI.<br><br><br><br><br></li>
-</ol>
+<h1 id="What-role-in-Redux"><a href="#What-role-in-Redux" class="headerlink" title="What role in Redux?"></a>What role in Redux?</h1><p>Redux Middleware can perform additional processing after the Action is assigned and before entering the Reducer, such as calling the API and so on. </p>
+<p><img src="https://drive.google.com/uc?export=view&id=1EUk3RATpGN3UgOWTGhhE8xpvvKJ8_4qe" alt="Middleware&#39;s role"><br><br></p>
+<h1 id="How-to-use-Middleware"><a href="#How-to-use-Middleware" class="headerlink" title="How to use Middleware?"></a>How to use Middleware?</h1><p>Passing one or more middleware into the applyMiddleware() function provided by Redux will return an Enhancer, and then pass the Enhancer as a parameter to createStore() function.</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">import &#123; applyMiddleware, createStore &#125; from <span class="string">'redux'</span>;</span><br><span class="line">const enhancer = applyMiddleware(</span><br><span class="line">  middlewareOne,</span><br><span class="line">  middlewareTwo</span><br><span class="line">);</span><br><span class="line">const store = createStore(</span><br><span class="line">  reducers,</span><br><span class="line">  initialState,</span><br><span class="line">  enhancer</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<br>
+
+<p>Next article - <a href="http://tingkaiwu.com/2019/02/03/deep-dive-into-middleware-2/">Dive into Middleware - Implementation</a><br><br><br><br><br></p>
 <hr>
-<p><strong>Reference link:</strong><br><a href="https://medium.com/4cats-io/%E6%B7%B1%E5%85%A5%E6%B7%BA%E5%87%BA-flux-44a48c320e11" target="_blank" rel="noopener">https://medium.com/4cats-io/flux-44a48c320e11</a><br><a href="https://medium.com/@w3bh4ck/the-flux-architecture-pattern-for-frontend-development-1f2dae32b789" target="_blank" rel="noopener">https://medium.com/@w3bh4ck/the-flux-architecture-pattern</a></p>
+<p><strong>Reference link:</strong><br><a href="https://medium.com/@max80713/%E8%A9%B3%E8%A7%A3-redux-middleware-efd6a506357e" target="_blank" rel="noopener">https://medium.com/@max80713/redux-middleware-efd6a506357e</a><br><a href="https://images.app.goo.gl/PjjzpBaYGNcZrpq87" target="_blank" rel="noopener">https://images.app.goo.gl/PjjzpBaYGNcZrpq87</a></p>
 	  
 	</div>
 
@@ -168,13 +146,14 @@
 
     
     
-    <a href="/2019/01/17/high-level-overview-of-redux/" type="button" class="btn btn-default"><i
+    <a href="/2019/02/03/deep-dive-into-middleware-2/" type="button" class="btn btn-default"><i
                 class="fa fa-arrow-circle-o-left"></i> Prev</a>
     
 
     <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
     
-    <a type="button" class="btn btn-default disabled">Next<i class="fa fa-arrow-circle-o-right"></i></a>
+    <a href="/2019/01/17/high-level-overview-of-redux/" type="button" class="btn btn-default ">Next<i
+                class="fa fa-arrow-circle-o-right"></i></a>
     
 
     
@@ -202,7 +181,7 @@
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	2019-01-12 
+	2019-01-29 
 	</div>
 	
 
@@ -213,7 +192,7 @@
     <ul id="categorys" class="tag_box list-unstyled collapse in">
           
   <li>
-    <li><a href="/categories/Redux-Origin/">Redux Origin<span>2</span></a></li>
+    <li><a href="/categories/Middleware-Trilogy/">Middleware Trilogy<span>3</span></a></li>
   </li>
 
     </ul>
@@ -226,7 +205,7 @@
 	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
     <ul id="tags" class="tag_box list-unstyled collapse in">	  
 	    
-  <li style="display:inline-block;"><a href="/tags/Redux/">Redux<span>5</span></a></li> <li style="display:inline-block;"><a href="/tags/React/">React<span>5</span></a></li> <li style="display:inline-block;"><a href="/tags/Flux/">Flux<span>2</span></a></li>
+  <li style="display:inline-block;"><a href="/tags/Middleware/">Middleware<span>3</span></a></li> <li style="display:inline-block;"><a href="/tags/Redux/">Redux<span>5</span></a></li> <li style="display:inline-block;"><a href="/tags/React/">React<span>5</span></a></li>
     </ul>
 	</div>
 		
@@ -237,7 +216,7 @@
 	   <a data-toggle="collapse" data-target="#toc"><i class="fa fa-bars"></i></a>
 	   <div id="toc" class="toc collapse in">
 		   <span class="toc-title">Contents</span>
-			<ol class="toc-article"><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#Flux-origin"><span class="toc-article-text">Flux origin</span></a></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#Flux-composition"><span class="toc-article-text">Flux composition</span></a></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#Flux-process-flow"><span class="toc-article-text">Flux process flow</span></a></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#Conclusion"><span class="toc-article-text">Conclusion</span></a></li></ol>
+			<ol class="toc-article"><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#What-role-in-Redux"><span class="toc-article-text">What role in Redux?</span></a></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#How-to-use-Middleware"><span class="toc-article-text">How to use Middleware?</span></a></li></ol>
 		</div>
 	
 	</div>

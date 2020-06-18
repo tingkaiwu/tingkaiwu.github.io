@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <title>Dive into Middleware - Implementation | TINGKAI&#39;S BLOG</title>
+  
+  <meta name="author" content="TingKai">
+  
+  <meta name="description" content="How to build a Middleware?">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+  
+  <meta property="og:title" content="Dive into Middleware - Implementation" />
+  <meta property="og:site_name" content="TINGKAI&#39;S BLOG" />
+
+  
+  <meta property="og:image" content="" />
+  
+
+  
+  
+  <link href="/favicon.png" rel="icon">
+  
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-169367660-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="TINGKAI'S BLOG" type="application/atom+xml">
+</head>
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+		<button type="button" class="navbar-header navbar-toggle navbar-menu" data-toggle="collapse" data-target=".navbar-collapse">
+			MENU
+		</button>
+		<a class="navbar-brand" href="/">
+			<div class="navbar-title">Home</div>
+		</a>
+		<div class="collapse navbar-collapse nav-menu">
+			<ul class="nav navbar-nav">
+				
+				<li>
+					<a href="/archives" title="All the articles.">
+						<div class="navbar-title">Archives</div>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/categories" title="All the categories.">
+						<div class="navbar-title">Categories</div>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags" title="All the tags.">
+						<div class="navbar-title">Tags</div>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/about" title="About me.">
+						<div class="navbar-title">About</div>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+
+<div class="page-header">
+	<h1>
+		Dive into Middleware - Implementation</h1>
+</div>
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  
+		 <div class="alert alert-success description">
+			<i class="fa fa-info-circle"></i> How to build a Middleware?
+		 </div> <!-- alert -->
+	  		
+
+	  <p>Continued from the previous article - <a href="http://tingkaiwu.com/2019/01/29/deep-dive-into-middleware-1/">Dive into Middleware - Introduction</a>. Let’s continue to talk about how to use Middleware. The following is a Dummy Middleware, which represents the basic architecture of a Middleware, which can also be expressed by ES6 Arrow Function:</p>
+<a id="more"></a>
+
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> middleware(store) &#123;</span><br><span class="line">  <span class="built_in">return</span> <span class="keyword">function</span>(next) &#123;</span><br><span class="line">    <span class="built_in">return</span> <span class="keyword">function</span>(action) &#123;</span><br><span class="line">      </span><br><span class="line">      /* Code */</span><br><span class="line">    </span><br><span class="line">      <span class="built_in">return</span> next(action);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>ES6 Arrow Function Implementation:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const middleware = store =&gt; next =&gt; action =&gt; &#123;</span><br><span class="line">  /* Code */</span><br><span class="line">  <span class="built_in">return</span> next(action);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h1 id="What-does-next-in-Middleware-do"><a href="#What-does-next-in-Middleware-do" class="headerlink" title="What does next() in Middleware do?"></a>What does next() in Middleware do?</h1><p>next() is the function used to hand over the Action to the next Middleware. In other words, every Action received by Middleware will be the action passed by the previous Middleware call next(). If there is no next Middleware, it will let the Reducer handle it. Here is a simple example:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const middleware1 = store =&gt; next =&gt; action =&gt; &#123;</span><br><span class="line">  next(action);</span><br><span class="line">&#125;;</span><br><span class="line">const middleware2 = store =&gt; next =&gt; action =&gt; &#123;</span><br><span class="line">  next(action);</span><br><span class="line">&#125;;</span><br><span class="line">const reducer = (state, action) =&gt; &#123;&#125;</span><br><span class="line">// create store &amp; use middleware</span><br><span class="line">store.dispatch(action);</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>When the Store dispatches an aAction, if there is Middleware, it will be processed by the first Middleware, otherwise it will be directly handled by the Reducer.</li>
+<li>middleware1 is the first Middleware, received the action dispatched by store, call next() to hand over the Action to the next Middleware (middleware2).</li>
+<li>middleware2 receives the action dispatched by middleware1, calls next() to hand over the Action to the next Middleware.</li>
+<li>Because middleware2 is the last Middleware, the Reducer handles middleware2’s dispatched actions.<br><br><br></li>
+</ol>
+<h1 id="What-is-the-return-value-of-calling-next-in-Middleware"><a href="#What-is-the-return-value-of-calling-next-in-Middleware" class="headerlink" title="What is the return value of calling next() in Middleware?"></a>What is the return value of calling next() in Middleware?</h1><p>Each Middleware return value will be obtained by calling next() in the previous Middleware. That is to say, the return value of calling next() in Middleware will be the value of the next Middleware return. If it is calling next() in the last Middleware, the return value will be the incoming action itself, for example:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">const middleware1 = store =&gt; next =&gt; action =&gt; &#123;</span><br><span class="line">  const value = next(action);</span><br><span class="line">  <span class="built_in">return</span> value;</span><br><span class="line">&#125;;</span><br><span class="line">const middleware2 = store =&gt; next =&gt; action =&gt; &#123;</span><br><span class="line">  const value = next(action);</span><br><span class="line">  <span class="built_in">return</span> value;</span><br><span class="line">&#125;;</span><br><span class="line">// creatw store &amp; use middleware</span><br><span class="line">const value = store.dispatch(action);</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>The last Middleware (middleware2) call next() will return the incoming Action.</li>
+<li>middleware1 calling next() will return the value of the next Middleware (middleware2) return.</li>
+<li>Finally, store.dispatch() will return the value of the first Middleware (middleware1) return.</li>
+</ol>
+<p>The complete sample code is attached below to demonstrate the execution sequence of calling next() and the execution result of its return value. Click on the console button below to see the results:</p>
+<iframe
+     src="https://codesandbox.io/embed/next-ismo4?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="next"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-autoplay allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+<br><br>
+
+<h1 id="Is-there-a-return-in-Middleware"><a href="#Is-there-a-return-in-Middleware" class="headerlink" title="Is there a return in Middleware?"></a>Is there a return in Middleware?</h1><p>Not necessarily. If there is no return in Middleware, calling next() in the previous Middleware will return undefined (if there is no return in the first Middleware, then calling store.dispatch() will return undefined). Generally speaking, Middleware can return any types of data, but if there is no special requirement, it is recommended to directly return the value returned by calling next(), to ensure that calling store.dispatch() can get the dispatch action.<br><br></p>
+<h1 id="Can-I-get-the-current-state-in-Middleware"><a href="#Can-I-get-the-current-state-in-Middleware" class="headerlink" title="Can I get the current state in Middleware?"></a>Can I get the current state in Middleware?</h1><p>Of course can. One of the reasons Middleware is written as store =&gt; next =&gt; action =&gt; {} is to allow developers to get the store parameters in Middleware and get the current state through store.getState().<br><br></p>
+<h1 id="What-happens-when-I-call-store-dispatch-in-Middleware"><a href="#What-happens-when-I-call-store-dispatch-in-Middleware" class="headerlink" title="What happens when I call store.dispatch() in Middleware?"></a>What happens when I call store.dispatch() in Middleware?</h1><p>The parameters of the store in Middleware can call getState() to get the current state, or you can call dispatch to send an action. The difference from calling next() is that the action of dispatching through next() is send to the next Middleware, and the action dispatched through store.dispatch() will go through all Middleware again (from the following picture you can understand the difference between the two).</p>
+<p><img src="https://drive.google.com/uc?export=view&id=1BpyhmyaQTUU6vD16SyXwGPf6kTffiYps" alt="Middleware flow"><br><br></p>
+<p>Next article - <a href="http://tingkaiwu.com/2019/02/09/deep-dive-into-middleware-3/">Dive into Middleware - Principles</a><br><br><br><br><br></p>
+<hr>
+<p><strong>Reference link:</strong><br><a href="https://medium.com/@max80713/%E8%A9%B3%E8%A7%A3-redux-middleware-efd6a506357e" target="_blank" rel="noopener">https://medium.com/@max80713/redux-middleware-efd6a506357e</a><br><a href="https://medium.com/@WendellLiu/redux-middleware%E5%A4%A7%E7%95%A5%E6%9E%B6%E6%A7%8B-ace7e646c929" target="_blank" rel="noopener">https://medium.com/@WendellLiu/redux-middleware-ace7e646c929</a></p>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+
+    
+    
+    <a href="/2019/02/09/deep-dive-into-middleware-3/" type="button" class="btn btn-default"><i
+                class="fa fa-arrow-circle-o-left"></i> Prev</a>
+    
+
+    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+    
+    <a href="/2019/01/29/deep-dive-into-middleware-1/" type="button" class="btn btn-default ">Next<i
+                class="fa fa-arrow-circle-o-right"></i></a>
+    
+
+    
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	<!-- 
+<section id="comment">
+    <h2 class="title">Comments</h2>
+
+    
+</section>
+
+ -->
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2019-02-03 
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/Middleware-Trilogy/">Middleware Trilogy<span>3</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li style="display:inline-block;"><a href="/tags/Middleware/">Middleware<span>3</span></a></li> <li style="display:inline-block;"><a href="/tags/Redux/">Redux<span>5</span></a></li> <li style="display:inline-block;"><a href="/tags/React/">React<span>5</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	   <a data-toggle="collapse" data-target="#toc"><i class="fa fa-bars"></i></a>
+	   <div id="toc" class="toc collapse in">
+		   <span class="toc-title">Contents</span>
+			<ol class="toc-article"><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#What-does-next-in-Middleware-do"><span class="toc-article-text">What does next() in Middleware do?</span></a></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#What-is-the-return-value-of-calling-next-in-Middleware"><span class="toc-article-text">What is the return value of calling next() in Middleware?</span></a></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#Is-there-a-return-in-Middleware"><span class="toc-article-text">Is there a return in Middleware?</span></a></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#Can-I-get-the-current-state-in-Middleware"><span class="toc-article-text">Can I get the current state in Middleware?</span></a></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#What-happens-when-I-call-store-dispatch-in-Middleware"><span class="toc-article-text">What happens when I call store.dispatch() in Middleware?</span></a></li></ol>
+		</div>
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+<!-- 
+ -->
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2020 
+  <a href="https://github.com/tingkaiwu" target="_blank">TingKai</a> 
+  with help from <a href="http://hexo.io/" target="_blank">Hexo</a>, 
+  <a href="https://github.com/blackshow/hexo-theme-freemind.386" target="_blank" rel="noopener">Freemind.386</a>
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>⬆︎TOP</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+</body>
+   </html>
