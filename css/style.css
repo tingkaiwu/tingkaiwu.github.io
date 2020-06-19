@@ -427,16 +427,16 @@ td {
 hr {
     border-top: 2px solid #fff;
 }
-.btn {
+/* .btn {
     margin-bottom: 10px;
-}
-.btn:active {
+} */
+/* .btn:active {
     -webkit-box-shadow: #000 0 0 0 0;
     box-shadow: #000 0 0 0 0;
     margin: 10px 0 0 10px;
     outline: #000 none;
     background: #bbb !important;
-}
+} */
 .ds-thread {
     font-size: 0.8em;
 }
@@ -508,6 +508,10 @@ code {
 }
 .navbar-menu:focus {
     background: black!important;
+}
+.btn:focus {
+    color: #000;
+    background: #bbb!important;
 }
 .navbar-menu {
     font-size: 1.3em;
