@@ -100,7 +100,7 @@ Of course can. One of the reasons Middleware is written as store => next => acti
 # What happens when I call store.dispatch() in Middleware?
 The parameters of the store in Middleware can call getState() to get the current state, or you can call dispatch to send an action. The difference from calling next() is that the action of dispatching through next() is send to the next Middleware, and the action dispatched through store.dispatch() will go through all Middleware again (from the following picture you can understand the difference between the two).
 
-![Middleware flow](https://drive.google.com/uc?export=view&id=1BpyhmyaQTUU6vD16SyXwGPf6kTffiYps)
+![Middleware flow](/images/0_SGzQlCN4O4KMKVLy.png)
 <br>
 
 Next article - [Dive into Middleware - Principles](http://tingkaiwu.com/2019/02/09/deep-dive-into-middleware-3/)

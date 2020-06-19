@@ -17,13 +17,13 @@ In the highly interactive front-end applications, the data state of the applicat
 # Flux origin
 Flux is a design concept proposed by Facebook. Its most important thinking is one-way data flow.
 
-![Flux vs MVC](https://drive.google.com/uc?export=view&id=10I3eiAoPrFEtccK7mW52vP9eK22Aqpw5)
+![Flux vs MVC](/images/1_oRBseHE_yxtlbcRTrbkRnQ.jpeg)
 
 Although not all MVC implementations are as shown above. It is easy to cause maintenance problems because of the two-way data flow. However, Flux clearly defines the roles' responsibilities and each role's interactions, which improves maintainability. Flux is a one-way data flow design concept, not a library, so it has a variety of implementations.
 <br>
 
 # Flux composition
-![Flux flow](https://drive.google.com/uc?export=view&id=1wqpOMUrlUZqzEXpS1hfoVouA9XPEEddl)
+![Flux flow](/images/Capture1.PNG)
 **The main roles in Flux:**
 - Action: Standardize all actions to change data, so you can quickly master the behavior of the entire App.
 - Action Creator: Responsible for creating action and passing action to dispatcher.
@@ -34,7 +34,7 @@ Although not all MVC implementations are as shown above. It is easy to cause mai
 <br><br>
 
 # Flux process flow
-![Flux flow detail](https://drive.google.com/uc?export=view&id=16ALtl2eboAq5JfV37lL45DIaj_NfcUoh)
+![Flux flow detail](/images/Capture2.PNG)
 1. User operation app.
 2. Action creator creates the action and passes it to dispatcher.
 3. The dispatcher sequentially passes the action to the store.

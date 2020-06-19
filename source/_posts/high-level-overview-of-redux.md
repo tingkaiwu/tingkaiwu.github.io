@@ -15,7 +15,7 @@ Redux is inspired by Flux and Elm architecture. So, be sure to understand what F
 <br>
 
 # Quick walkthrough Flux
-![Flux flow](https://drive.google.com/uc?export=view&id=1wqpOMUrlUZqzEXpS1hfoVouA9XPEEddl)
+![Flux flow](/images/Capture1.PNG)
 **Pros:**
 - One-way data flow: The behavior of changing data must go through Action, Dispatcher, and then to the Store.
 - Single Source of Truth: The data is stored in the Store in a unified manner, and all the data required by the Viewer must be obtained from the Store.
@@ -26,7 +26,7 @@ Redux is inspired by Flux and Elm architecture. So, be sure to understand what F
 <br><br>
 
 # Redux vs Flux
-![Redux vs Flux](https://drive.google.com/uc?export=view&id=1LZcMODJi0K8fKsq6ckYzWLiSqAAg83tb)
+![Redux vs Flux](/images/1_68Ymu2WbuIb4CC7RFvh7hw.png)
 
 | Flux | Redux |
 | :--- | :--- |
@@ -38,7 +38,7 @@ Redux is inspired by Flux and Elm architecture. So, be sure to understand what F
 <br><br>
 
 # Redux core concepts
-![Redux core concepts](https://drive.google.com/uc?export=view&id=1zSL7wx_mmzSHksm3sPkmt0CvdiXCNHu8)
+![Redux core concepts](/images/1_C0sWwmHXIY414rzEUDFEmg.png)
 - Single state tree
 - Action description changes
 - Reducer implementation changes

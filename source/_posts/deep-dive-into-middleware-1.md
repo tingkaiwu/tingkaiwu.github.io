@@ -18,7 +18,7 @@ Middleware is also called intermediary layer or middle layer. Middleware applica
 # What role in Redux?
 Redux Middleware can perform additional processing after the Action is assigned and before entering the Reducer, such as calling the API and so on. 
 
-![Middleware's role](https://drive.google.com/uc?export=view&id=1EUk3RATpGN3UgOWTGhhE8xpvvKJ8_4qe)
+![Middleware's role](/images/redux-architecture-overview-middleware.png)
 <br>
 
 # How to use Middleware?
