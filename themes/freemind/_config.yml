@@ -51,10 +51,11 @@ links:
 widgets:
 - search
 - project
+- recent_posts
 - links
 - category
 - tagcloud
-- recent_posts
+
 
 
 
