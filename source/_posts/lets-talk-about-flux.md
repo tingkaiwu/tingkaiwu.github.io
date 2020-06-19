@@ -1,8 +1,8 @@
 ---
 title: Let's talk about Flux
-date: 2019-01-12 00:33:37
+date: 2018-12-12 00:33:37
 categories: 
-    - React Ecosystem
+    - Redux Origin
 tags:
     - Flux
     - Redux
@@ -51,6 +51,10 @@ The benefits Flux brings to you are:
 1. You can quickly master the behavior in the entire app.
 2. Information and business logic are also stored uniformly.
 3. Let View only need to be responsible for the layout of the UI.
+<br><br>
+
+Next article - [High level overview of Redux](http://tingkaiwu.com/2018/12/20/high-level-overview-of-redux/)
+
 <br><br><br><br>
 --------------------------------------------------------------------------------
 

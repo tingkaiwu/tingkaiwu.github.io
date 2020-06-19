@@ -5,36 +5,36 @@
 	<% if (post) { %>
 	<div id="top_meta"></div>
 	<div class="col-md-9">
-	<% } else { %>
-	<div class="col-md-12">
-	<% } %>
+		<% } else { %>
+		<div class="col-md-12">
+			<% } %>
 
-	<!-- content -->
-	<div class="mypage">		
-	  <% if (item.description) { %>
-		 <div class="alert alert-success description">
-			<i class="fa fa-info-circle"></i> <%- item.description %>
-		 </div> <!-- alert -->
-	  <% } %>		
+			<!-- content -->
+			<div class="mypage">
+				<% if (item.description) { %>
+				<div class="alert alert-success description">
+					<i class="fa fa-info-circle"></i> <%- item.description %>
+				</div> <!-- alert -->
+				<% } %>
 
-	  <%- item.content %>	  
-	</div>
+				<%- item.content %>
+			</div>
 
-	<div>
-  	<center>
-	<%- partial('post/pagination', {page: item}) %>
-    </center>
-	</div>
-	
-	<!-- comment -->
-	<!-- <%- partial('post/comment', {page: item}) %> -->
-	</div> <!-- col-md-9/col-md-12 -->
-		
-	<% if (post) { %>
-	<div id="side_meta">
-		<%- partial('post/meta', {item: item}) %>
-	</div>
-	<% } %>	
+			<div>
+				<center>
+					<%- partial('post/pagination', {page: item}) %>
+				</center>
+			</div>
 
-</div><!-- row -->
-<!-- <%- partial('post/comment_footer', {page: item}) %> -->
+			<!-- comment -->
+			<!-- <%- partial('post/comment', {page: item}) %> -->
+		</div> <!-- col-md-9/col-md-12 -->
+
+		<% if (post) { %>
+		<div id="side_meta">
+			<%- partial('post/meta', {item: item}) %>
+		</div>
+		<% } %>
+
+	</div><!-- row -->
+	<!-- <%- partial('post/comment_footer', {page: item}) %> -->

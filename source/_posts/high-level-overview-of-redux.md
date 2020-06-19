@@ -1,8 +1,8 @@
 ---
 title: High level overview of Redux
-date: 2019-01-17 05:22:34
+date: 2018-12-20 05:22:34
 categories:
-    - React Ecosystem
+    - Redux Origin
 tags:
     - Redux
     - Flux
@@ -10,7 +10,7 @@ tags:
 toc: true
 description: “Redux is a predictable state container for JavaScript apps.”
 ---
-Redux is inspired by Flux and Elm architecture. So, be sure to understand what Flux is before reading this article. Flux is a one-way data flow design pattern that helps you write a structured front-end architecture. If you want to explore Flux in more depth, you can refer to this - [LET'S TALK ABOUT FLUX](http://tingkaiwu.com/2019/01/12/lets-talk-about-flux/)
+Redux is inspired by Flux and Elm architecture. So, be sure to understand what Flux is before reading this article. Flux is a one-way data flow design pattern that helps you write a structured front-end architecture. If you want to explore Flux in more depth, you can refer to this - [LET'S TALK ABOUT FLUX](http://tingkaiwu.com/2018/12/12/lets-talk-about-flux/)
 <!-- more -->
 <br>
 

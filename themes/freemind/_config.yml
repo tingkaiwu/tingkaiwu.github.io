@@ -5,6 +5,10 @@ show_heart: true
 show_slogan: true
 
 menu:
+  - title: Projects
+    url: projects
+    intro: "My projects."
+    # icon: "fa fa-folder"
   - title: Archives
     url: archives
     intro: "All the articles."
@@ -46,10 +50,13 @@ links:
 
 widgets:
 - search
+- project
+- links
 - category
 - tagcloud
 - recent_posts
-- links
+
+
 
 rss: 
 fancybox: true
