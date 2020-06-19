@@ -68,6 +68,12 @@
 			<ul class="nav navbar-nav">
 				
 				<li>
+					<a href="/projects" title="My projects.">
+						<div class="navbar-title">Projects</div>
+					</a>
+				</li>
+				
+				<li>
 					<a href="/archives" title="All the articles.">
 						<div class="navbar-title">Archives</div>
 					</a>
@@ -114,17 +120,17 @@
 	
 	<div id="top_meta"></div>
 	<div class="col-md-9">
-	
+		
 
-	<!-- content -->
-	<div class="mypage">		
-	  
-		 <div class="alert alert-success description">
-			<i class="fa fa-info-circle"></i> How to build a Middleware?
-		 </div> <!-- alert -->
-	  		
+			<!-- content -->
+			<div class="mypage">
+				
+				<div class="alert alert-success description">
+					<i class="fa fa-info-circle"></i> How to build a Middleware?
+				</div> <!-- alert -->
+				
 
-	  <p>Continued from the previous article (<a href="http://tingkaiwu.com/2019/01/29/deep-dive-into-middleware-1/">Dive into Middleware - Introduction</a>). Let’s continue to talk about how to use Middleware. The following is a Dummy Middleware, which represents the basic architecture of a Middleware, which can also be expressed by ES6 Arrow Function:</p>
+				<p>Continued from the previous article (<a href="http://tingkaiwu.com/2019/01/29/deep-dive-into-middleware-1/">Dive into Middleware - Introduction</a>). Let’s continue to talk about how to use Middleware. The following is a Dummy Middleware, which represents the basic architecture of a Middleware, which can also be expressed by ES6 Arrow Function:</p>
 <a id="more"></a>
 
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> middleware(store) &#123;</span><br><span class="line">  <span class="built_in">return</span> <span class="keyword">function</span>(next) &#123;</span><br><span class="line">    <span class="built_in">return</span> <span class="keyword">function</span>(action) &#123;</span><br><span class="line">      </span><br><span class="line">      /* Code */</span><br><span class="line">    </span><br><span class="line">      <span class="built_in">return</span> next(action);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -167,12 +173,12 @@
 <p>Next article - <a href="http://tingkaiwu.com/2019/02/09/deep-dive-into-middleware-3/">Dive into Middleware - Principles</a><br><br><br><br><br></p>
 <hr>
 <p><strong>Reference link:</strong><br><a href="https://medium.com/@max80713/%E8%A9%B3%E8%A7%A3-redux-middleware-efd6a506357e" target="_blank" rel="noopener">https://medium.com/@max80713/redux-middleware-efd6a506357e</a><br><a href="https://medium.com/@WendellLiu/redux-middleware%E5%A4%A7%E7%95%A5%E6%9E%B6%E6%A7%8B-ace7e646c929" target="_blank" rel="noopener">https://medium.com/@WendellLiu/redux-middleware-ace7e646c929</a></p>
-	  
-	</div>
 
-	<div>
-  	<center>
-	<div class="pagination">
+			</div>
+
+			<div>
+				<center>
+					<div class="pagination">
 
     
     
@@ -189,11 +195,11 @@
     
 </div>
 
-    </center>
-	</div>
-	
-	<!-- comment -->
-	<!-- 
+				</center>
+			</div>
+
+			<!-- comment -->
+			<!-- 
 <section id="comment">
     <h2 class="title">Comments</h2>
 
@@ -201,11 +207,11 @@
 </section>
 
  -->
-	</div> <!-- col-md-9/col-md-12 -->
+		</div> <!-- col-md-9/col-md-12 -->
+
 		
-	
-	<div id="side_meta">
-		<div class="col-md-3" id="post_meta"> 
+		<div id="side_meta">
+			<div class="col-md-3" id="post_meta"> 
 
 	<!-- date -->
 	
@@ -255,13 +261,12 @@
 	
 </div><!-- col-md-3 -->
 
-	</div>
+		</div>
 		
 
-</div><!-- row -->
-<!-- 
+	</div><!-- row -->
+	<!-- 
  -->
-
 	</div>
   </div>
   <div class="container-narrow">

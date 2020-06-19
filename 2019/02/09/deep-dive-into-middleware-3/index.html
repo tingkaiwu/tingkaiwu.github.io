@@ -68,6 +68,12 @@
 			<ul class="nav navbar-nav">
 				
 				<li>
+					<a href="/projects" title="My projects.">
+						<div class="navbar-title">Projects</div>
+					</a>
+				</li>
+				
+				<li>
 					<a href="/archives" title="All the articles.">
 						<div class="navbar-title">Archives</div>
 					</a>
@@ -114,17 +120,17 @@
 	
 	<div id="top_meta"></div>
 	<div class="col-md-9">
-	
+		
 
-	<!-- content -->
-	<div class="mypage">		
-	  
-		 <div class="alert alert-success description">
-			<i class="fa fa-info-circle"></i> Why should Middleware declare it as store => next => action => {}?
-		 </div> <!-- alert -->
-	  		
+			<!-- content -->
+			<div class="mypage">
+				
+				<div class="alert alert-success description">
+					<i class="fa fa-info-circle"></i> Why should Middleware declare it as store => next => action => {}?
+				</div> <!-- alert -->
+				
 
-	  <p>After reading the previous article (<a href="http://tingkaiwu.com/2019/02/03/deep-dive-into-middleware-2/">Dive into Middleware - Implementation</a>), there must be some questions. First of all, Middleware should be able to process the Action after it is dispatched and before entering the Reducer. So Middleware should be a function that can get the action parameters:</p>
+				<p>After reading the previous article (<a href="http://tingkaiwu.com/2019/02/03/deep-dive-into-middleware-2/">Dive into Middleware - Implementation</a>), there must be some questions. First of all, Middleware should be able to process the Action after it is dispatched and before entering the Reducer. So Middleware should be a function that can get the action parameters:</p>
 <a id="more"></a>
 
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> middleware(action) &#123;&#125;</span><br></pre></td></tr></table></figure>
@@ -148,12 +154,12 @@
 <p>Most of the time we use Redux Middleware written by others directly and rarely implement it ourselves, but if we try to understand the logic behind Redux Middleware, we can better use Redux Middleware to solve the problem.<br><br><br><br><br></p>
 <hr>
 <p><strong>Reference link:</strong><br><a href="https://medium.com/@max80713/%E8%A9%B3%E8%A7%A3-redux-middleware-efd6a506357e" target="_blank" rel="noopener">https://medium.com/@max80713/redux-middleware-efd6a506357e</a><br><a href="https://medium.com/@WendellLiu/redux-middleware%E5%A4%A7%E7%95%A5%E6%9E%B6%E6%A7%8B-ace7e646c929" target="_blank" rel="noopener">https://medium.com/@WendellLiu/redux-middleware-ace7e646c929</a></p>
-	  
-	</div>
 
-	<div>
-  	<center>
-	<div class="pagination">
+			</div>
+
+			<div>
+				<center>
+					<div class="pagination">
 
     
     
@@ -169,11 +175,11 @@
     
 </div>
 
-    </center>
-	</div>
-	
-	<!-- comment -->
-	<!-- 
+				</center>
+			</div>
+
+			<!-- comment -->
+			<!-- 
 <section id="comment">
     <h2 class="title">Comments</h2>
 
@@ -181,11 +187,11 @@
 </section>
 
  -->
-	</div> <!-- col-md-9/col-md-12 -->
+		</div> <!-- col-md-9/col-md-12 -->
+
 		
-	
-	<div id="side_meta">
-		<div class="col-md-3" id="post_meta"> 
+		<div id="side_meta">
+			<div class="col-md-3" id="post_meta"> 
 
 	<!-- date -->
 	
@@ -235,13 +241,12 @@
 	
 </div><!-- col-md-3 -->
 
-	</div>
+		</div>
 		
 
-</div><!-- row -->
-<!-- 
+	</div><!-- row -->
+	<!-- 
  -->
-
 	</div>
   </div>
   <div class="container-narrow">
