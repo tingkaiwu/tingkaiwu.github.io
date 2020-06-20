@@ -1,5 +1,5 @@
 ---
-title: "Dive into Middleware: Introduction"
+title: "Dive into Middleware: Implementation"
 date: 2019-02-03 14:00:13
 categories:
   - Middleware Trilogy
