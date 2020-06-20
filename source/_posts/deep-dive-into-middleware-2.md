@@ -1,5 +1,5 @@
 ---
-title: Dive into Middleware - Implementation
+title: "Dive into Middleware: Introduction"
 date: 2019-02-03 14:00:13
 categories:
   - Middleware Trilogy
@@ -11,7 +11,7 @@ toc: true
 description: How to build a Middleware?
 feature:
 ---
-Continued from the previous article ([Dive into Middleware - Introduction](http://tingkaiwu.com/2019/01/29/deep-dive-into-middleware-1/)). Let's continue to talk about how to use Middleware. The following is a Dummy Middleware, which represents the basic architecture of a Middleware, which can also be expressed by ES6 Arrow Function:
+Continued from the previous article ([Dive into Middleware: Introduction](http://tingkaiwu.com/2019/01/29/deep-dive-into-middleware-1/)). Let's continue to talk about how to use Middleware. The following is a Dummy Middleware, which represents the basic architecture of a Middleware, which can also be expressed by ES6 Arrow Function:
 <!-- more -->
 
 ```sh
@@ -103,7 +103,7 @@ The parameters of the store in Middleware can call getState() to get the current
 ![Middleware flow](/images/0_SGzQlCN4O4KMKVLy.png)
 <br>
 
-Next article - [Dive into Middleware - Principles](http://tingkaiwu.com/2019/02/09/deep-dive-into-middleware-3/)
+Next article - [Dive into Middleware: Principles](http://tingkaiwu.com/2019/02/09/deep-dive-into-middleware-3/)
 <br><br><br><br>
 
 ----------------------------------------------------------

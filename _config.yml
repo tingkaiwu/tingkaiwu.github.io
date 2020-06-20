@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: "TINGKAI'S BLOG"
-subtitle: "REAL DREAMERS DON'T SLEEP"
-description: "TINGKAI"
-keywords: react, redux, flux, middleware, thunk, saga, hoc
-author: TingKai
+title: "Tingkai Tech Blog"
+subtitle: "Real dreamers don't sleep"
+description: "Record what I learn and do in both frontend and backend"
+keywords: react, redux, flux, middleware, thunk, saga, hoc, Go, Golang, Javascript, ES6, Java, REST API, RESTful API, Servlt
+author: TingKai Wu
 language: en
 timezone: America/New_York
 

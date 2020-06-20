@@ -1,5 +1,5 @@
 ---
-title: Dive into Middleware - Introduction
+title: "Dive into Middleware: Introduction"
 date: 2019-01-29 10:38:51
 categories:
   - Middleware Trilogy
@@ -38,7 +38,7 @@ const store = createStore(
 ```
 <br>
 
-Next article - [Dive into Middleware - Implementation](http://tingkaiwu.com/2019/02/03/deep-dive-into-middleware-2/)
+Next article - [Dive into Middleware: Implementation](http://tingkaiwu.com/2019/02/03/deep-dive-into-middleware-2/)
 <br><br><br><br>
 
 ----------------------------------------------------------
