@@ -51,5 +51,6 @@ $(document).ready(function(){
                 $("#site_search").prependTo("#sidebar");
                 $("#site_search #st-search-input").css("width","85%");
             }
+            $(".date-meta").show();
         }
     };
