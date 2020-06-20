@@ -41,6 +41,7 @@ $(document).ready(function(){
                 $("#site_search").appendTo("#top_search");
                 $("#site_search #st-search-input").css("width","95%");
             }
+            $(".date-meta").hide();
         }
         else{
             if($("#top_meta #post_meta").length>0){
