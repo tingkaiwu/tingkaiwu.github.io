@@ -500,7 +500,8 @@ code {
 }
 .navbar-title {
     font-size: 1.2em;
-    line-height: 1.5em;
+    line-height: 1.4em;
+    outline: none;
 }
 .index-post-title {
     margin: 0em!important;
@@ -512,11 +513,6 @@ code {
 .btn:focus {
     color: #000;
     background: #bbb!important;
-}
-.navbar-menu {
-    font-size: 1.3em;
-    line-height: 1.3em;
-    outline: none;
 }
 html {
     overflow-x: hidden;
