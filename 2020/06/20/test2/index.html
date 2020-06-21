@@ -7,17 +7,17 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>Dive into Middleware: Introduction | Tingkai Website</title>
+  <title>test2 | Tingkai Website</title>
   
   <meta name="author" content="TingKai">
   
-  <meta name="description" content="Middleware can process everything from the predefined start point to the end point.">
+  <meta name="description" content="Record what I learn and do in both frontend and backend">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
   
-  <meta property="og:title" content="Dive into Middleware: Introduction" />
+  <meta property="og:title" content="test2" />
   <meta property="og:site_name" content="Tingkai Website" />
 
   
@@ -110,7 +110,7 @@
 
 <div class="page-header">
 	<h1>
-		Dive into Middleware: Introduction</h1>
+		test2</h1>
 </div>
 
 
@@ -125,24 +125,8 @@
 			<!-- content -->
 			<div class="mypage">
 				
-				<div class="alert alert-success description">
-					<i class="fa fa-info-circle"></i> Middleware can process everything from the predefined start point to the end point.
-				</div> <!-- alert -->
-				
 
-				<p>Middleware is also called intermediary layer or middle layer. Middleware applications can be seen in many back-end server frameworks. Simply put, Middleware can process everything from the predefined start point to the end point.</p>
-<a id="more"></a>
-<br>
-
-<h1 id="What-role-in-Redux"><a href="#What-role-in-Redux" class="headerlink" title="What role in Redux?"></a>What role in Redux?</h1><p>Redux Middleware can perform additional processing after the Action is assigned and before entering the Reducer, such as calling the API and so on. </p>
-<p><img src="/images/redux-architecture-overview-middleware.png" alt="Middleware&#39;s role"><br><br></p>
-<h1 id="How-to-use-Middleware"><a href="#How-to-use-Middleware" class="headerlink" title="How to use Middleware?"></a>How to use Middleware?</h1><p>Passing one or more middleware into the applyMiddleware() function provided by Redux will return an Enhancer, and then pass the Enhancer as a parameter to createStore() function.</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">import &#123; applyMiddleware, createStore &#125; from <span class="string">'redux'</span>;</span><br><span class="line">const enhancer = applyMiddleware(</span><br><span class="line">  middlewareOne,</span><br><span class="line">  middlewareTwo</span><br><span class="line">);</span><br><span class="line">const store = createStore(</span><br><span class="line">  reducers,</span><br><span class="line">  initialState,</span><br><span class="line">  enhancer</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-<br>
-
-<p>Next article - <a href="http://tingkaiwu.com/2019/02/03/deep-dive-into-middleware-2/">Dive into Middleware: Implementation</a><br><br><br><br><br></p>
-<hr>
-<p><strong>Reference link:</strong><br><a href="https://medium.com/@max80713/%E8%A9%B3%E8%A7%A3-redux-middleware-efd6a506357e" target="_blank" rel="noopener">https://medium.com/@max80713/redux-middleware-efd6a506357e</a><br><a href="https://images.app.goo.gl/PjjzpBaYGNcZrpq87" target="_blank" rel="noopener">https://images.app.goo.gl/PjjzpBaYGNcZrpq87</a></p>
+				<h2 id=""><a href="#" class="headerlink" title=""></a><br><br><br><br></h2><p><strong>Reference link:</strong></p>
 
 			</div>
 
@@ -152,12 +136,12 @@
 
     
     
-    <a href="/2019/02/03/deep-dive-into-middleware-2/" type="button" class="btn btn-default"><i class="fa fa-arrow-circle-o-left"></i></a>
+    <a href="/2020/06/20/test3/" type="button" class="btn btn-default"><i class="fa fa-arrow-circle-o-left"></i></a>
     
 
     <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i></a>
     
-    <a href="/2018/12/20/high-level-overview-of-redux/" type="button" class="btn btn-default "><i class="fa fa-arrow-circle-o-right"></i></a>
+    <a href="/2020/06/20/test1/" type="button" class="btn btn-default "><i class="fa fa-arrow-circle-o-right"></i></a>
     
 
     
@@ -185,43 +169,18 @@
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	2019-01-29 
+	2020-06-20 
 	</div>
 	
 
 	<!-- categories -->
     
-	<div class="meta-widget">
-	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
-    <ul id="categorys" class="tag_box list-unstyled collapse in">
-          
-  <li>
-    <li><a href="/categories/Middleware-Trilogy/">Middleware Trilogy<span>3</span></a></li>
-  </li>
-
-    </ul>
-	</div>
-	
 
 	<!-- tags -->
-	
-	<div class="meta-widget">
-	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
-    <ul id="tags" class="tag_box list-unstyled collapse in">	  
-	    
-  <li style="display:inline-block;"><a href="/tags/Middleware/">Middleware<span>3</span></a></li> <li style="display:inline-block;"><a href="/tags/Redux/">Redux<span>5</span></a></li> <li style="display:inline-block;"><a href="/tags/React/">React<span>5</span></a></li>
-    </ul>
-	</div>
 		
 
 	<!-- toc -->
 	<div class="meta-widget">
-	
-	   <a data-toggle="collapse" data-target="#toc"><i class="fa fa-bars"></i></a>
-	   <div id="toc" class="toc collapse in">
-		   <span class="toc-title">Contents</span>
-			<ol class="toc-article"><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#What-role-in-Redux"><span class="toc-article-text">What role in Redux?</span></a></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#How-to-use-Middleware"><span class="toc-article-text">How to use Middleware?</span></a></li></ol>
-		</div>
 	
 	</div>
 	

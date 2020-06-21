@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tingkaiwu.com/"/>
-  <updated>2020-06-20T10:34:52.951Z</updated>
+  <updated>2020-06-21T00:23:44.679Z</updated>
   <id>http://tingkaiwu.com/</id>
   
   <author>
@@ -15,6 +15,98 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test4</title>
+    <link href="http://tingkaiwu.com/2020/06/20/test4/"/>
+    <id>http://tingkaiwu.com/2020/06/20/test4/</id>
+    <published>2020-06-21T00:23:44.000Z</published>
+    <updated>2020-06-21T00:23:44.679Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a><br><br><br><br></h2><p><strong>Reference link:</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Reference link:&lt;/strong&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test3</title>
+    <link href="http://tingkaiwu.com/2020/06/20/test3/"/>
+    <id>http://tingkaiwu.com/2020/06/20/test3/</id>
+    <published>2020-06-21T00:23:40.000Z</published>
+    <updated>2020-06-21T00:23:40.288Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a><br><br><br><br></h2><p><strong>Reference link:</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Reference link:&lt;/strong&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test2</title>
+    <link href="http://tingkaiwu.com/2020/06/20/test2/"/>
+    <id>http://tingkaiwu.com/2020/06/20/test2/</id>
+    <published>2020-06-21T00:23:33.000Z</published>
+    <updated>2020-06-21T00:23:33.480Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a><br><br><br><br></h2><p><strong>Reference link:</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Reference link:&lt;/strong&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test1</title>
+    <link href="http://tingkaiwu.com/2020/06/20/test1/"/>
+    <id>http://tingkaiwu.com/2020/06/20/test1/</id>
+    <published>2020-06-21T00:23:28.000Z</published>
+    <updated>2020-06-21T00:23:28.801Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a><br><br><br><br></h2><p><strong>Reference link:</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Reference link:&lt;/strong&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Dive into Middleware: Principles</title>

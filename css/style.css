@@ -517,3 +517,7 @@ code {
 html {
     overflow-x: hidden;
 }
+.disabled {
+    background-color: #000084!important;
+    color: #000084!important;
+}
