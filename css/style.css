@@ -82,9 +82,10 @@ li i {
 .tag_box {
     margin: 0;
     overflow: hidden;
+    font-size: 15px;
 }
 .tag_box li {
-    line-height: 24px;
+    line-height: 19px;
 }
 .tag_box li i {
     opacity: 0.9;
