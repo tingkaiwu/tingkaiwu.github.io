@@ -1,5 +1,5 @@
 ---
-title: "Dive into Middleware: Principles"
+title: "Design Principles of Middleware"
 date: 2019-02-09 15:33:38
 categories:
   - Middleware Trilogy
@@ -11,7 +11,7 @@ toc: true
 description: Why should Middleware declare it as store => next => action => {}?
 feature:
 ---
-After reading the previous article ([Dive into Middleware: Implementation](http://tingkaiwu.com/2019/02/03/deep-dive-into-middleware-2/)), there must be some questions. First of all, Middleware should be able to process the Action after it is dispatched and before entering the Reducer. So Middleware should be a function that can get the action parameters:
+After reading the previous article ([Middleware Implementation](http://tingkaiwu.com/2019/02/03/deep-dive-into-middleware-2/)), there must be some questions. First of all, Middleware should be able to process the Action after it is dispatched and before entering the Reducer. So Middleware should be a function that can get the action parameters:
 <!-- more -->
 
 ```sh
