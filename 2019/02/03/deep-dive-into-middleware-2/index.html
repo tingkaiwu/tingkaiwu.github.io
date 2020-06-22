@@ -7,7 +7,7 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>Dive into Middleware: Implementation | Tingkai Website</title>
+  <title>Middleware Implementation | Tingkai Website</title>
   
   <meta name="author" content="TingKai">
   
@@ -17,7 +17,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
   
-  <meta property="og:title" content="Dive into Middleware: Implementation" />
+  <meta property="og:title" content="Middleware Implementation" />
   <meta property="og:site_name" content="Tingkai Website" />
 
   
@@ -110,7 +110,7 @@
 
 <div class="page-header">
 	<h1>
-		Dive into Middleware: Implementation</h1>
+		Middleware Implementation</h1>
 </div>
 
 
@@ -130,7 +130,7 @@
 				</div> <!-- alert -->
 				
 
-				<p>Continued from the previous article (<a href="http://tingkaiwu.com/2019/01/29/deep-dive-into-middleware-1/">Dive into Middleware: Introduction</a>). Let’s continue to talk about how to use Middleware. The following is a Dummy Middleware, which represents the basic architecture of a Middleware, which can also be expressed by ES6 Arrow Function:</p>
+				<p>Continued from the previous article (<a href="http://tingkaiwu.com/2019/01/29/deep-dive-into-middleware-1/">Introduction to Middleware</a>). Let’s continue to talk about how to use Middleware. The following is a Dummy Middleware, which represents the basic architecture of a Middleware, which can also be expressed by ES6 Arrow Function:</p>
 <a id="more"></a>
 
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> middleware(store) &#123;</span><br><span class="line">  <span class="built_in">return</span> <span class="keyword">function</span>(next) &#123;</span><br><span class="line">    <span class="built_in">return</span> <span class="keyword">function</span>(action) &#123;</span><br><span class="line">      </span><br><span class="line">      /* Code */</span><br><span class="line">    </span><br><span class="line">      <span class="built_in">return</span> next(action);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -170,7 +170,7 @@
 <h1 id="Can-I-get-the-current-state-in-Middleware"><a href="#Can-I-get-the-current-state-in-Middleware" class="headerlink" title="Can I get the current state in Middleware?"></a>Can I get the current state in Middleware?</h1><p>Of course can. One of the reasons Middleware is written as store =&gt; next =&gt; action =&gt; {} is to allow developers to get the store parameters in Middleware and get the current state through store.getState().<br><br></p>
 <h1 id="What-happens-when-I-call-store-dispatch-in-Middleware"><a href="#What-happens-when-I-call-store-dispatch-in-Middleware" class="headerlink" title="What happens when I call store.dispatch() in Middleware?"></a>What happens when I call store.dispatch() in Middleware?</h1><p>The parameters of the store in Middleware can call getState() to get the current state, or you can call dispatch to send an action. The difference from calling next() is that the action of dispatching through next() is send to the next Middleware, and the action dispatched through store.dispatch() will go through all Middleware again (from the following picture you can understand the difference between the two).</p>
 <p><img src="/images/0_SGzQlCN4O4KMKVLy.png" alt="Middleware flow"><br><br></p>
-<p>Next article - <a href="http://tingkaiwu.com/2019/02/09/deep-dive-into-middleware-3/">Dive into Middleware: Principles</a><br><br><br><br><br></p>
+<p>Next article - <a href="http://tingkaiwu.com/2019/02/09/deep-dive-into-middleware-3/">Design Principles of Middleware</a><br><br><br><br><br></p>
 <hr>
 <p><strong>Reference link:</strong><br><a href="https://medium.com/@max80713/%E8%A9%B3%E8%A7%A3-redux-middleware-efd6a506357e" target="_blank" rel="noopener">https://medium.com/@max80713/redux-middleware-efd6a506357e</a><br><a href="https://medium.com/@WendellLiu/redux-middleware%E5%A4%A7%E7%95%A5%E6%9E%B6%E6%A7%8B-ace7e646c929" target="_blank" rel="noopener">https://medium.com/@WendellLiu/redux-middleware-ace7e646c929</a></p>
 
